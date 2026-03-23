@@ -9,3 +9,5 @@ Spatial Sorting: Sorts detected regions by X-coordinates to ensure data is proce
 OCR & Data Structuring: Leverages PyTesseract (PSM 6) for character recognition and cleans the output into structured Pandas DataFrames.
 
 Horizontal Merging: Automatically concatenates multiple table results into a single, unified side-by-side dataset.
+
+ rows = [line.strip().split() for line in data.strip().split('\n') if line.strip()] - this part needs further optimization for efficiently handeling the split
